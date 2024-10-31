@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+#contenedor{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 100%;
+}
+
+header{
+    width: 100%;
+    height: 30%;
+}
+
+#display{
+    width: 100%;
+    height: 100%;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    font-size: 30px;
+}
+
+#tablero{
+    height: 100%;
+    display: grid;
+    grid-template-areas:  
+    "ac ac division multiplicacion"
+    "7 8 9 resta"
+    "4 5 6 suma"
+    "1 2 3 igual"
+    "0 punto masmenos igual";
+}
+
+button{
+    border-radius: 30px;
+}
+
+#AC{
+    grid-area: ac;
+    background-color: aqua;
+}
+
+#division{
+    grid-area: division;
+}
+
+#multiplicacion{
+    grid-area: multiplicacion;
+}
+
+#resta{
+    grid-area: resta;
+}
+
+#suma{
+    grid-area: suma;
+}
+
+#num0{
+    grid-area: num0;
+}
+
+#num1{
+    grid-area: num1;
+}
+
+#num2{
+    grid-area: num2;
+}
+
+#num3{
+    grid-area: num3;
+}
+
+#num4{
+    grid-area: num4;
+}
+
+#num5{
+    grid-area: num5;
+}
+
+#num6{
+    grid-area: num6;
+}
+
+#num7{
+    grid-area: num7;
+}
+
+#num8{
+    grid-area: num8;
+}
+
+#num9{
+    grid-area: num9;
+}
+
+#punto{
+    grid-area: punto;
+}
+
+#masmenos{
+    grid-area: masmenos;
+    background-color: blueviolet;
+}
+
+#igual{
+    background-color: greenyellow;
+    grid-area: igual;
+}
+
+.numero{
+    background-color: antiquewhite;
+}
